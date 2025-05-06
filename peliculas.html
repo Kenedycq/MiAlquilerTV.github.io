@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Películas - MiAlquilerTV</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .pelicula {
+      background-color: #1c1c1c;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .pelicula:hover {
+      transform: scale(1.03);
+    }
+    .pelicula img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .pelicula a {
+      text-decoration: none;
+      color: #ff3c00;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Catálogo de Películas</h1>
+  <div class="galeria">
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=1ELJ6WTQ0wE" target="_blank">
+        <img src="images/estreno1.jpeg" alt="Infierno en el pantano" />
+        Infierno en el pantano
+      </a>
+    </div>
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=BE0BwFSYXOQ" target="_blank">
+        <img src="images/blanca.jpeg" alt="Príncipe de Persia" />
+        Blanca Nieves 
+      </a>
+    </div>
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=607uotDlZns" target="_blank">
+        <img src="images/loo.jpeg" alt="Eclipse" />
+        El día que la tierra explotó: Looney Tunes
+      </a>
+    </div>
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=-PZ_77GsSFk" target="_blank">
+        <img src="images/destino.jpeg" alt="Avatar" />
+        Destino Final Lazos de Sangre
+      </a>
+    </div>
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=IKA9H68sgXo" target="_blank">
+        <img src="images/la-monja.jpg" alt="Super Mario Bros" />
+        La Monja
+      </a>
+    </div>
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=1kOlrEwTfco" target="_blank">
+        <img src="images/conjuro.jpg" alt="Frozen 2" />
+        El conjuro
+      </a>
+    </div>
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=CpXJHWSXJW0" target="_blank">
+        <img src="images/avatar.jpeg" alt="Batman: El Caballero de la Noche" />
+        Avatar
+      </a>
+    </div>
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=rmz-WEgNS44" target="_blank">
+        <img src="images/estreno2.jpeg" alt="Capitana Marvel" />
+        La Mega Tormenta
+      </a>
+    </div>
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=yNXfOOL8824" target="_blank">
+        <img src="images/avergers.jpeg" alt="Avengers" />
+        Avengers
+      </a>
+    </div>
+    <div class="pelicula">
+      <a href="https://www.youtube.com/watch?v=N1GAypxl3XE" target="_blank">
+        <img src="images/estreno3.jpeg" alt="Avengers: Infinity War" />
+        Thunderbolts
+      </a>
+    </div>
+  </div>
+</body>
+</html>
