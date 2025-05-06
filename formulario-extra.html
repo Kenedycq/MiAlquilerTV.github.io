@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contáctanos</title>
+  <link rel="stylesheet" href="css/formulario-extra.css" />
+</head>
+<body>
+  <!-- Contenedor de murciélagos -->
+  <div class="bats-container"></div>
+
+  <!-- Formulario -->
+  <div class="form-box">
+    <h2>Contáctanos</h2>
+    <p>Estamos aquí para ayudarte. Rellena el formulario y te responderemos lo antes posible.</p>
+    <form action="php/procesar_consulta.php" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+      </div>
+      <div class="form-group">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required />
+      </div>
+      <div class="form-group">
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required />
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+      </div>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </div>
+
+  <!-- Script para animar murciélagos -->
+  <script>
+    const batsContainer = document.querySelector(".bats-container");
+
+    for (let i = 0; i < 10; i++) {
+      const bat = document.createElement("div");
+      bat.classList.add("bat");
+      bat.style.left = Math.random() * 100 + "vw";
+      bat.style.top = Math.random() * 100 + "vh";
+      bat.style.animationDuration = 3 + Math.random() * 3 + "s";
+      batsContainer.appendChild(bat);
+    }
+  </script>
+</body>
+</html>
+
+
